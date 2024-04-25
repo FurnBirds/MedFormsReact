@@ -1,6 +1,6 @@
 body::before {
   content: "";
-  background-image: url(./Img/Pathology-Lab-Management-Software.jpg); 
+  /* background-image: url(./Img/Pathology-Lab-Management-Software.jpg); */
   background-size: cover;
   position: absolute;
   top: 0px;

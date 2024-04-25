@@ -1,6 +1,7 @@
 import React from "react";
 
 function Home() {
+    console.log("homed")
     return (
         <section id="home">
             <h1>
