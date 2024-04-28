@@ -3,10 +3,14 @@ import React from "react";
 function Home() {
     console.log("homed")
     return (
-        <section id="home">
+        <section className="home">
             <h1>
-                Liza is a Web Developer from New York
+                Medical Profiles App
             </h1>
+            <blockquote>
+                This application demonstrates a simple medical record keeping fucntion. <br></br>
+                Please click on the to navigation items to start using.
+            </blockquote>
         </section>
     );
 }
