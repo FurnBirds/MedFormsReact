@@ -1,15 +1,7 @@
-
-
 import React from "react";
 import MedProfileRow from "./MedProfileRow"
+import SearchBar from "./SearchBar";
 
-function SearchBar() {
-    return (
-      <form>
-        <input type="text" placeholder="Search for Name" />
-      </form>
-    )
-  }
 
 
 function MedProfilesTable({ MedicalProfiles }) {
