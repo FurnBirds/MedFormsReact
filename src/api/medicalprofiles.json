@@ -1,5 +1,5 @@
 {
-  "ptProfileDB": [
+  "ptprofiledb": [
     {
       "id": "4",
       "surname": "THANER",
@@ -7,9 +7,9 @@
       "dob": "06/02/2003",
       "gender": 0,
       "occupation": "Parking inspector",
-      "systolicBP": "131",
-      "diastolicBP": "79",
-      "medicalIssue": "dehydration from working on sunny day"
+      "systolicbp": "131",
+      "diastolicbp": "79",
+      "medicalissue": "dehydration from working on sunny day"
     },
     {
       "id": "5",
@@ -18,9 +18,9 @@
       "dob": "29/02/2024",
       "gender": 9,
       "occupation": "Teacher",
-      "systolicBP": "143",
-      "diastolicBP": "93",
-      "medicalIssue": "hypertension. very stressful workplace"
+      "systolicbp": "143",
+      "diastolicbp": "93",
+      "medicalissue": "hypertension. very stressful workplace"
     },
     {
       "id": "11",
@@ -29,9 +29,9 @@
       "dob": "23/06/2003",
       "gender": 1,
       "occupation": "Business Analyst",
-      "systolicBP": "135",
-      "diastolicBP": "79",
-      "medicalIssue": "Reflux issues. also hypertension being monitored."
+      "systolicbp": "135",
+      "diastolicbp": "79",
+      "medicalissue": "Reflux issues. also hypertension being monitored."
     },
     {
       "id": "7",
@@ -40,9 +40,9 @@
       "dob": "06/06/1999",
       "gender": 0,
       "occupation": "Secretary",
-      "systolicBP": "110",
-      "diastolicBP": "75",
-      "medicalIssue": "cold flu sx. Covid negative. some fever with vomitting. Requires IV saline"
+      "systolicbp": "110",
+      "diastolicbp": "75",
+      "medicalissue": "cold flu sx. Covid negative. some fever with vomitting. Requires IV saline"
     },
     {
       "id": "b441",
@@ -51,9 +51,9 @@
       "dob": "07/03/2024",
       "gender": 1,
       "occupation": "Student",
-      "systolicBP": "123",
-      "diastolicBP": "77",
-      "medicalIssue": "in grown toe nail"
+      "systolicbp": "123",
+      "diastolicbp": "77",
+      "medicalissue": "in grown toe nail"
     },
     {
       "id": "8f31",
@@ -62,9 +62,9 @@
       "dob": "30/06/1999",
       "gender": 0,
       "occupation": "Police Woman",
-      "systolicBP": "115",
-      "diastolicBP": "61",
-      "medicalIssue": ""
+      "systolicbp": "115",
+      "diastolicbp": "61",
+      "medicalissue": ""
     },
     {
       "id": "a5ea",
@@ -73,9 +73,9 @@
       "dob": null,
       "gender": 1,
       "occupation": "Piolet",
-      "systolicBP": "",
-      "diastolicBP": "",
-      "medicalIssue": ""
+      "systolicbp": "",
+      "diastolicbp": "",
+      "medicalissue": ""
     },
     {
       "id": "dbda",
@@ -84,9 +84,9 @@
       "dob": null,
       "gender": 0,
       "occupation": "Chef",
-      "systolicBP": "",
-      "diastolicBP": "",
-      "medicalIssue": ""
+      "systolicbp": "",
+      "diastolicbp": "",
+      "medicalissue": ""
     },
     {
       "id": "e4f3",
@@ -95,9 +95,9 @@
       "dob": "18/02/2002",
       "gender": 0,
       "occupation": "Admin",
-      "systolicBP": "114",
-      "diastolicBP": "69",
-      "medicalIssue": "3 months pregnant. Ultrasound normal. Nil medical hx. Normal pregnancy.\n"
+      "systolicbp": "114",
+      "diastolicbp": "69",
+      "medicalissue": "3 months pregnant. Ultrasound normal. Nil medical hx. Normal pregnancy.\n"
     },
     {
       "id": "0b7d",
@@ -106,9 +106,9 @@
       "dob": "11/03/2021",
       "gender": 0,
       "occupation": "",
-      "systolicBP": "125",
-      "diastolicBP": "77",
-      "medicalIssue": "Lacerations to both hands after falling at play ground. Would dressed."
+      "systolicbp": "125",
+      "diastolicbp": "77",
+      "medicalissue": "Lacerations to both hands after falling at play ground. Would dressed."
     },
     {
       "id": "b8be",
@@ -117,9 +117,9 @@
       "dob": "10/04/2023",
       "gender": 0,
       "occupation": "",
-      "systolicBP": "",
-      "diastolicBP": "",
-      "medicalIssue": "Worm infection."
+      "systolicbp": "",
+      "diastolicbp": "",
+      "medicalissue": "Worm infection."
     }
   ]
 }

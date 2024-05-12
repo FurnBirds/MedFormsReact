@@ -13,17 +13,14 @@ function MedProfilesTable() {
   const filteredProfiles = MedicalProfiles.filter(ptProfile => ptProfile.surname.toLowerCase().includes(search.toLowerCase()) || ptProfile.firstname.toLowerCase().includes(search.toLowerCase()))
   const rows = [];
   
-  
-
   useEffect(() => {
-    fetch("ptProfileDB")
+    fetch("ptprofiledb")
     .then(r => r.json())
-    .then(ptListing => setMedicalProfiles(ptListing.pt_profile_dbs))
+    .then(ptListing => setMedicalProfiles(ptListing.ptprofiledbs))
     
   }, [])
 
   console.log(MedicalProfiles)
-
 
   for (const ptProfile of filteredProfiles) {
     rows.push(
@@ -35,9 +32,9 @@ function MedProfilesTable() {
         dob={ptProfile.dob}
         gender={ptProfile.gender}
         occupation={ptProfile.occupation}
-        systolicBP={ptProfile.systolicBP}
-        diastolicBP={ptProfile.diastolicBP}
-        medicalIssue={ptProfile.medicalIssue}
+        systolicBP={ptProfile.systolicbp}
+        diastolicBP={ptProfile.diastolicbp}
+        medicalIssue={ptProfile.medicalissue}
       />
     )
   }
