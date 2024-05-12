@@ -1,5 +1,5 @@
 {
-  "ptProfile": [
+  "ptProfileDB": [
     {
       "id": "4",
       "surname": "THANER",
@@ -109,17 +109,6 @@
       "systolicBP": "125",
       "diastolicBP": "77",
       "medicalIssue": "Lacerations to both hands after falling at play ground. Would dressed."
-    },
-    {
-      "id": "639f",
-      "firstname": "Ning",
-      "surname": "LEE",
-      "dob": "06/09/1977",
-      "gender": 0,
-      "occupation": "",
-      "systolicBP": "100",
-      "diastolicBP": "68",
-      "medicalIssue": ""
     },
     {
       "id": "b8be",

@@ -21,7 +21,11 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/MedicalProfiles" element={<MedProfilesTable MedicalProfiles = {MedicalProfiles}/>} />
+        <Route
+          exact path="/MedicalProfiles"
+          element={<MedProfilesTable
+          MedicalProfiles = {MedicalProfiles}/>}
+          />
         <Route exact path="/NewPatientProfile" element={<NewProfile />} />
         <Route path="*" element={<h1>404 not found</h1>} />
       </Routes>

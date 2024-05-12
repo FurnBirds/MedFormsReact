@@ -1,8 +1,16 @@
 import React from "react";
 
 function NewProfile() {
-    return(
+  
+  function handleSubmit(event) {
+    event.preventDefault()
+    console.log("test submit")
+  }
+  
+  
+  return(
       <div id="profileCard">
+        <form onSubmit={handleSubmit}>
           {/* <div><button id="newButton">New Patient Data</button></div>
           <br/><br/>
           <div><button id="delButton">Delete Profile</button></div>
@@ -36,7 +44,8 @@ function NewProfile() {
           <textarea type="text" className="valueInput" id="condition" name="condition" rows="8" col="100"></textarea>
           
           <br/><br/>
-          <button id="saveButton">Save</button>
+          <button id="saveButton" type="submit"> Submit New Patient Profile</button>
+          </form>
         </div>
         )
   }

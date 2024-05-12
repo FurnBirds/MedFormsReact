@@ -1,21 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState} from "react";
 import React from "react";
 import MedProfileRow from "./MedProfileRow"
 import SearchBar from "./SearchBar";
 
 
 
-function MedProfilesTable({ MedicalProfiles }) {
+function MedProfilesTable() {
   
   const [search, setSearch] = useState("")
-  
+  const [MedicalProfiles, setMedicalProfiles] = useState([])
+    
+  const filteredProfiles = MedicalProfiles.filter(ptProfile => ptProfile.surname.toLowerCase().includes(search.toLowerCase()) || ptProfile.firstname.toLowerCase().includes(search.toLowerCase()))
   const rows = [];
   
-  const filteredProfiles = MedicalProfiles.filter(
-    ptProfile => ptProfile.surname.toLowerCase().includes(search.toLowerCase()) ||
-    ptProfile.firstname.toLowerCase().includes(search.toLowerCase())
-  )
   
+
+  useEffect(() => {
+    fetch("ptProfileDB")
+    .then(r => r.json())
+    .then(ptListing => setMedicalProfiles(ptListing.pt_profile_dbs))
+    
+  }, [])
+
+  console.log(MedicalProfiles)
+
+
   for (const ptProfile of filteredProfiles) {
     rows.push(
       <MedProfileRow

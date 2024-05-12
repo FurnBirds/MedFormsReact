@@ -116,10 +116,11 @@ font-size: 15px;
   width: 100px;
 }
 .names{
-  width: 200px
+  width: 150px
 }
 .ptOccupation{
-  width: 300px
+  width: 200px;
+  overflow-wrap: break-word;
 }
 .ptCondition{
   max-width: 500px;
