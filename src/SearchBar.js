@@ -1,13 +1,13 @@
 import React from "react";
 
-function SearchBar( {search}) {
+function SearchBar( {searchProfile}) {
     return (
       <form>
         <input
           type="text"
           placeholder="Search for Name"
-          value={search}
-          // onChange={e => setSearch(e.target.value)}
+          //value={search}
+          onChange={e => searchProfile(e.target.value)}
         />
 
       </form>

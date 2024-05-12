@@ -6,9 +6,16 @@ import SearchBar from "./SearchBar";
 
 
 function MedProfilesTable({ MedicalProfiles }) {
+  
   const [search, setSearch] = useState("")
+  
   const rows = [];
-  const filteredProfiles = MedicalProfiles.filter(ptProfile => ptProfile.surname.includes(search) || ptProfile.firstname.includes(search))
+  
+  const filteredProfiles = MedicalProfiles.filter(
+    ptProfile => ptProfile.surname.toLowerCase().includes(search.toLowerCase()) ||
+    ptProfile.firstname.toLowerCase().includes(search.toLowerCase())
+  )
+  
   for (const ptProfile of filteredProfiles) {
     rows.push(
       <MedProfileRow
@@ -26,9 +33,13 @@ function MedProfilesTable({ MedicalProfiles }) {
     )
   }
 
+function searchProfile(searchTxt){
+  setSearch(searchTxt)
+}
+
   return (
       <div>
-        <SearchBar search = {search} />
+        <SearchBar searchProfile = {searchProfile} />
         <table>
           <thead>
             <tr>
