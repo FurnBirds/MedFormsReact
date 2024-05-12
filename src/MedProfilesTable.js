@@ -1,3 +1,4 @@
+import { useState } from "react";
 import React from "react";
 import MedProfileRow from "./MedProfileRow"
 import SearchBar from "./SearchBar";
@@ -5,13 +6,14 @@ import SearchBar from "./SearchBar";
 
 
 function MedProfilesTable({ MedicalProfiles }) {
-
+  const [search, setSearch] = useState("")
   const rows = [];
-  for (const ptProfile of MedicalProfiles) {
+  const filteredProfiles = MedicalProfiles.filter(ptProfile => ptProfile.surname.includes(search) || ptProfile.firstname.includes(search))
+  for (const ptProfile of filteredProfiles) {
     rows.push(
       <MedProfileRow
         key={ptProfile.id}
-        id={ptProfile.id}
+        id={ptProfile.id} 
         surname={ptProfile.surname}
         firstname={ptProfile.firstname}
         dob={ptProfile.dob}
@@ -26,7 +28,7 @@ function MedProfilesTable({ MedicalProfiles }) {
 
   return (
       <div>
-        <SearchBar />
+        <SearchBar search = {search} />
         <table>
           <thead>
             <tr>

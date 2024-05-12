@@ -1,9 +1,15 @@
 import React from "react";
 
-function SearchBar() {
+function SearchBar( {search}) {
     return (
       <form>
-        <input type="text" placeholder="Search for Name" />
+        <input
+          type="text"
+          placeholder="Search for Name"
+          value={search}
+          // onChange={e => setSearch(e.target.value)}
+        />
+
       </form>
     )
   };

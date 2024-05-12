@@ -3,10 +3,10 @@ import React from "react";
 function NewProfile() {
     return(
       <div id="profileCard">
-          <div><button id="newButton">New Patient Data</button></div>
+          {/* <div><button id="newButton">New Patient Data</button></div>
           <br/><br/>
           <div><button id="delButton">Delete Profile</button></div>
-          <br/><br/>
+          <br/><br/> */}
           <h4 id="idDisplay">ID: (New Patient Profile)</h4>
           <label for="fname" className="flabel">First name:</label><br/>
           <input type="text" className="valueInput" id="fname" name="fname"/>

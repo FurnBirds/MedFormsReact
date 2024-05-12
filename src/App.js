@@ -14,7 +14,7 @@ import { MedicalProfiles } from "./TempMedicalprofiles.js"
 import './index.css';
 
 function App() {
-
+  
   const [page, setPage] = useState("/Medical Profiles")
  return (
     <div className="App">
