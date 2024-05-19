@@ -34,7 +34,7 @@ nav a:active {
 
 nav a.active {
   color: white;
-  background: tomato;
+  background: navy;
 }
 
 h1{
@@ -107,7 +107,7 @@ font-size: 15px;
   width: 75px;
 }
 .ptID{
-  width: 40px;
+  width: 75px;
 }
 .ptDOB{
   width: 100px;

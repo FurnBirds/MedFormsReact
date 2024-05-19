@@ -10,6 +10,7 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import MedProfilesTable from "./MedProfilesTable.js";
 import NewProfile from "./NewPatientProfile.js";
+import ProfileDetails from "./ProfileDetails.js";
 import { MedicalProfiles } from "./TempMedicalprofiles.js"
 import './index.css';
 
@@ -26,7 +27,8 @@ function App() {
           element={<MedProfilesTable
           MedicalProfiles = {MedicalProfiles}/>}
           />
-        <Route exact path="/NewPatientProfile" element={<NewProfile />} />
+        <Route exact path="/MedicalProfiles/NewProfile" element={<NewProfile />} />
+        <Route path="/MedicalProfiles/:id" element={<ProfileDetails />} />
         <Route path="*" element={<h1>404 not found</h1>} />
       </Routes>
 

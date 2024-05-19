@@ -7,7 +7,7 @@ function NavBar() {
         <nav>
             <NavLink exact="true" to="/">Home</NavLink>
             <NavLink exact="true" to="/MedicalProfiles">Medical Profiles</NavLink>
-            <NavLink exact="true" to="/NewPatientProfile">New Patient Profile</NavLink>
+            <NavLink exact="true" to="/MedicalProfiles/NewProfile">New Patient Profile</NavLink>
         </nav>
     );
 }
