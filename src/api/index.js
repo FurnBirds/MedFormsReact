@@ -34,6 +34,7 @@ function runServer() {
 
       for (const resource in db) {
         this.get(`/${resource}`);
+        this.get(`/${resource}/:id`);
         this.post(`/${resource}`);
         this.patch(`/${resource}/:id`);
         this.del(`/${resource}/:id`);

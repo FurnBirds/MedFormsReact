@@ -14,7 +14,7 @@ function MedProfilesTable() {
   const rows = [];
   
   useEffect(() => {
-    fetch("ptprofiledb")
+    fetch("/ptprofiledb")
     .then(r => r.json())
     .then(ptListing => setMedicalProfiles(ptListing.ptprofiledbs))
     

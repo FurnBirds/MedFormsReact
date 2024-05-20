@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import dateFormat, { masks } from "dateformat";
+import dateFormat from "dateformat";
+
+
+
 
 function MedProfileRow ({ id, surname, firstname, dob, gender, occupation, systolicBP, diastolicBP, medicalIssue}) {
   let genderShow
@@ -21,12 +24,13 @@ function MedProfileRow ({ id, surname, firstname, dob, gender, occupation, systo
   } else{
     dobShow = dateFormat(dob, "dd/mm/yyyy")
   }
-  
 
   
+
+    
   return (
       <tr>
-        <td className = "ptID" id = "ptID"><Link to={`/MedicalProfiles/${id}`}>{id}</Link></td>
+        <td className = "ptID" id = "ptID" ><Link to={`/MedicalProfiles/${id}`}>{id}</Link></td>
         <td className = "names" id = "ptSurname">{surname}</td>
         <td className = "names" id = "ptFirstname">{firstname}</td>
         <td className = "ptGender">{genderShow}</td>

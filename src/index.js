@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.css';
 import App from './App';
 import { BrowserRouter } from "react-router-dom"
 import runServer from "./api"
-runServer()
+runServer();
 //import reportWebVitals from './reportWebVitals';
 
 //search bar
@@ -21,4 +20,3 @@ root.render(
 );
 
 
-//reportWebVitals();
