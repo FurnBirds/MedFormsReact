@@ -1,5 +1,5 @@
 //import logo from './logo.svg';
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ReactDom from 'react-dom';
 import {
   Routes,
@@ -10,7 +10,7 @@ import Home from "./Home";
 import MedProfilesTable from "./MedProfilesTable.js";
 import NewProfile from "./NewPatientProfile.js";
 import ProfileDetails from "./ProfileDetails.js";
-// import { MedicalProfiles } from "./TempMedicalprofiles.js"
+
 import './index.css';
 
 function App() {
