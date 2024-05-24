@@ -1,6 +1,4 @@
-//import logo from './logo.svg';
 import React from "react";
-import ReactDom from 'react-dom';
 import {
   Routes,
   Route
@@ -15,7 +13,7 @@ import './index.css';
 
 function App() {
   
-  //const [page, setPage] = useState("/Medical Profiles")
+
  return (
     <div className="App">
       <NavBar />

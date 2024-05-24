@@ -12,17 +12,12 @@ function MedProfilesTable() {
   const rows = [];
   
   useEffect(() => {
-    //fetch("/ptprofiledb")
+    
     fetch('http://localhost:8000/ptprofiledb')
-    // fetch('https://catfact.ninja/breeds')
     .then(r => r.json())
-    //.then(result => console.log(result))
     .then(ptListing => setMedicalProfiles(ptListing))
-    //.then(console.log(MedicalProfiles))
     
   }, [])
-
-  //console.log(MedicalProfiles)
 
   for (const ptProfile of filteredProfiles) {
     rows.push(
