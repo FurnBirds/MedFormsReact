@@ -30,7 +30,7 @@
       "gender": 1,
       "occupation": "Business Analyst",
       "systolicbp": "135",
-      "diastolicbp": "79",
+      "diastolicbp": "77",
       "medicalissue": "Reflux issues. also hypertension being monitored."
     },
     {
@@ -41,7 +41,7 @@
       "gender": 0,
       "occupation": "Secretary",
       "systolicbp": "110",
-      "diastolicbp": "75",
+      "diastolicbp": "70",
       "medicalissue": "cold flu sx. Covid negative. some fever with vomitting. Requires IV saline"
     },
     {
@@ -59,23 +59,23 @@
       "id": "8f31",
       "firstname": "Joanne",
       "surname": "Peterson",
-      "dob": "1999-05-30",
+      "dob": "1999-05-12",
       "gender": 0,
       "occupation": "Police Woman",
       "systolicbp": "115",
       "diastolicbp": "61",
-      "medicalissue": ""
+      "medicalissue": "Recovering from stroke 3 weeks ago. Requires regular medications."
     },
     {
       "id": "a5ea",
       "firstname": "Michael",
       "surname": "Heartridge",
-      "dob": null,
+      "dob": "2001-09-23",
       "gender": 1,
-      "occupation": "Piolet",
-      "systolicbp": "",
-      "diastolicbp": "",
-      "medicalissue": ""
+      "occupation": "piolet",
+      "systolicbp": "134",
+      "diastolicbp": "78",
+      "medicalissue": "Eye injury from sports with son."
     },
     {
       "id": "dbda",
