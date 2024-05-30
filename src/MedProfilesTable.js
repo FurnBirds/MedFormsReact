@@ -11,6 +11,23 @@ function MedProfilesTable() {
   const filteredProfiles = MedicalProfiles.filter(ptProfile => ptProfile.surname.toLowerCase().includes(search.toLowerCase()) || ptProfile.firstname.toLowerCase().includes(search.toLowerCase()))
   const rows = [];
   
+  function DelProfileRow(delID){
+    console.log("called")
+    fetch("http://localhost:8000/ptprofiledb/" + delID, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+      .then(r => r.json())
+      .then(data => setMedicalProfiles(prevTable => prevTable.filter(row => row.id !== data.id)))
+        //=> {
+      // setData(prevData => prevData.filter(row => row.id !== idToRemove));
+    }
+
+
+
+
   useEffect(() => {
     
     fetch('http://localhost:8000/ptprofiledb')
@@ -22,6 +39,7 @@ function MedProfilesTable() {
   for (const ptProfile of filteredProfiles) {
     rows.push(
       <MedProfileRow
+        delProfile = {DelProfileRow}
         key={ptProfile.id}
         id={ptProfile.id} 
         surname={ptProfile.surname}
@@ -40,12 +58,17 @@ function searchProfile(searchTxt){
   setSearch(searchTxt)
 }
 
+
+
+
+
   return (
       <div>
         <SearchBar searchProfile = {searchProfile} />
         <table>
           <thead>
             <tr>
+              <th>Delete</th>
               <th>ID</th>
               <th className="names">Last Name</th>
               <th className="names">First Name</th>

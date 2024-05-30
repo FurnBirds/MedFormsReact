@@ -5,7 +5,8 @@ import dateFormat from "dateformat";
 
 
 
-function MedProfileRow ({ id, surname, firstname, dob, gender, occupation, systolicBP, diastolicBP, medicalIssue}) {
+
+function MedProfileRow ({delProfile, id, surname, firstname, dob, gender, occupation, systolicBP, diastolicBP, medicalIssue}) {
   let genderShow
   if(gender === 1){
     genderShow = "Male"
@@ -25,11 +26,10 @@ function MedProfileRow ({ id, surname, firstname, dob, gender, occupation, systo
     dobShow = dateFormat(dob, "dd/mm/yyyy")
   }
 
-  
-
     
   return (
       <tr>
+        <td><button onClick={() => delProfile(id)} id="delButton">DELETE</button> </td>
         <td className = "ptID" id = "ptID" ><Link to={`/MedicalProfiles/${id}`}>{id}</Link></td>
         <td className = "names" id = "ptSurname">{surname}</td>
         <td className = "names" id = "ptFirstname">{firstname}</td>

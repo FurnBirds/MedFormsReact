@@ -1,17 +1,6 @@
 {
   "ptprofiledb": [
     {
-      "id": "4",
-      "surname": "THANER",
-      "firstname": "Marianne",
-      "dob": "2003-02-06",
-      "gender": 0,
-      "occupation": "Parking inspector",
-      "systolicbp": "131",
-      "diastolicbp": "79",
-      "medicalissue": "dehydration from working on sunny day"
-    },
-    {
       "id": "5",
       "surname": "MARIOS",
       "firstname": "Adam",
@@ -21,28 +10,6 @@
       "systolicbp": "143",
       "diastolicbp": "93",
       "medicalissue": "hypertension. very stressful workplace"
-    },
-    {
-      "id": "11",
-      "surname": "FOO",
-      "firstname": "Steven",
-      "dob": "2003-04-11",
-      "gender": 1,
-      "occupation": "Business Analyst",
-      "systolicbp": "135",
-      "diastolicbp": "77",
-      "medicalissue": "Reflux issues. also hypertension being monitored."
-    },
-    {
-      "id": "7",
-      "surname": "FLOWERS",
-      "firstname": "Amy",
-      "dob": "1999-06-06",
-      "gender": 0,
-      "occupation": "Secretary",
-      "systolicbp": "110",
-      "diastolicbp": "70",
-      "medicalissue": "cold flu sx. Covid negative. some fever with vomitting. Requires IV saline"
     },
     {
       "id": "b441",
@@ -116,7 +83,7 @@
       "surname": "WANG",
       "dob": "2011-01-11",
       "gender": 0,
-      "occupation": "Student",
+      "occupation": "Student Administrator",
       "systolicbp": "124",
       "diastolicbp": "80",
       "medicalissue": "Worm infection."
@@ -142,6 +109,17 @@
       "systolicbp": "114",
       "diastolicbp": "78",
       "medicalissue": "Back injury due to fall while at home."
+    },
+    {
+      "id": "9a29",
+      "firstname": "Johnny",
+      "surname": "TESTs",
+      "gender": "1",
+      "dob": "2002-09-24",
+      "occupation": "Truck Driver",
+      "systolicbp": "124",
+      "diastolicbp": "84",
+      "medicalissue": "Cold flu sx. Covid -ve"
     }
   ]
 }
